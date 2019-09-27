@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+
+  </head>
+
+  <body>
+
+    <script>
+      var arr = new Array(20);
+      var arr_info = [
+        ["Oleg", "Roman", "Vladimir", "Olga", "Anatoliy", "Irina", "Nikolay", "Kirill", "Tatiana", "Viktoria", "Ivan"],
+        [22, 26, 34, 50, 43, 18, 36, 25, 54, 33, 24],
+        ['male', 'male', 'male', 'female', 'male', 'female', 'male', 'male', 'female', 'female', 'male',],
+        [65, 54, 87, 65, 63, 55, 75, 79, 56, 83, 85],
+        [163, 150, 178, 204, 190, 175, 169, 189, 195, 156, 184],
+        ['student', 'student', 'worker', 'student', 'boss', 'worker', 'worker', 'boss', 'student', 'student', 'student'],
+        ['Madrid', 'Berlin', 'Kiev', 'Barcelona', 'New York', 'Moscow', 'Riga', 'San Francisko', 'Dubai', 'Ankara', 'Beyrut'],
+        ['BMW', 'Mersedes', 'Tesla', 'Volga', 'Jiguli', 'Bentley', 'BMW', 'Mersedes', 'Tesla', 'Volga', 'Jiguli'],
+        ['grey', 'blue', 'grey', 'green', 'blue', 'grey', 'blue', 'grey', 'green', 'blue', 'blue'],
+        ['English', 'English', 'Spanish', 'Dutch', 'Chinese', 'English', 'Arabian', 'English', 'Spanish', 'Dutch', 'Chinese']
+      ]
+      var users = 11;
+      var params = 10;
+      
+      for (var i = 0; i < arr.length; i++) {
+          arr[i] = null;
+      }
+      for (var i = 0, j = 0; i < users; i++, j++) {
+        arr[i] = {
+          name: arr_info[0][j],
+          age: arr_info[1][j],
+          gender: arr_info[2][j],
+          weight: arr_info[3][j],
+          height: arr_info[4][j],
+          status: arr_info[5][j],
+          city: arr_info[6][j],
+          car: arr_info[7][j],
+          eyes: arr_info[8][j],
+          language: arr_info[9][j]
+        };
+      }
+      arr = arr.filter(item => item);
+      console.log(arr)
+    </script>
+
+
+
+
+       
+
+
+  </body>
+
+</html>
